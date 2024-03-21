@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+$primary-color: #242f9b;
+$error-color: #ff3333;
+$grey-color: #555555;
+$white-color: #ffffff;
+$element-width: 300px;
+$button-width: 80px;
+$button-height: 40px;
+$border-radius: 5px;
+
+.new-task {
+  width: 1000px;
+  margin: 0 auto;
+
+  &-form {
+    color: $grey-color;
+  }
+
+  &-select-list,
+  &-title,
+  &-detail {
+    width: $element-width;
+    margin-bottom: 25px;
+  }
+
+  &-detail {
+    height: 200px;
+  }
+  &-date{
+    margin-bottom: 25px;
+  }
+  &-button {
+    background-color: $primary-color;
+    color: $white-color;
+    width: $button-width;
+    height: $button-height;
+    border-radius: $border-radius;
+  }
+}
+
+.error-message {
+  color: $error-color;
+}

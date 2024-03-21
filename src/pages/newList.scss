@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+$new-list-color: #242f9b;
+$white-color: #ffffff;
+$grey-color: #555555;
+
+.new-list {
+  width: 1000px;
+  margin: 0 auto;
+
+  &-form {
+    color: $grey-color;
+  }
+
+  &-title {
+    width: 300px;
+    margin-bottom: 25px;
+  }
+
+  &-button {
+    background-color: $new-list-color;
+    color: $white-color;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+  }
+}

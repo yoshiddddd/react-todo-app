@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+$base-width: 500px;
+$form-margin: 25px 0;
+$text-color: #555555;
+$input-height: 30px;
+$button-color: #242f9b;
+$button-width: 100px;
+$button-height: 40px;
+$border-radius: 5px;
+$error-color: #ff3333;
+
+.signup {
+  width: $base-width;
+  margin: 0 auto;
+
+  &-form {
+    margin: $form-margin;
+    color: $text-color;
+
+    input {
+      width: 100%;
+      font-size: large;
+      height: $input-height;
+      margin-bottom: 25px;
+    }
+  }
+
+  &-button {
+    background-color: $button-color;
+    color: #ffffff;
+    width: $button-width;
+    height: $button-height;
+    border-radius: $border-radius;
+  }
+}
+
+.error-message {
+  color: $error-color;
+}

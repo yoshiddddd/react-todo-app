@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+$primary-color: #242f9b;
+$error-color: #ff3333;
+$button-width: 80px;
+$button-height: 40px;
+$button-radius: 5px;
+
+.edit-task {
+  width: 1000px;
+  margin: 0 auto;
+
+  &-form {
+    color: #555555;
+  }
+
+  &-title,
+  &-detail {
+    width: 300px;
+    margin-bottom: 25px;
+  }
+
+  &-button,
+  &-button.delete-task-button {
+    width: $button-width;
+    height: $button-height;
+    border-radius: $button-radius;
+    margin: 25px 5px;
+  }
+
+  &-button {
+    background-color: $primary-color;
+    color: #ffffff;
+  }
+
+  &-button.delete-task-button {
+    color: $error-color;
+    border: solid 1px $error-color;
+  }
+}
+
+.error-message {
+  color: $error-color;
+}
