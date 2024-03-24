@@ -25,3 +25,35 @@ $grey-color: #555555;
     border-radius: 5px;
   }
 }
+@media (max-width: 768px) {
+    .new-list {
+      width: 90%;
+  
+      &-title {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+  
+      &-button {
+        width: 90%;
+        height: 50px;
+      }
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .new-list {
+      width: 100%;
+  
+      &-title {
+        width: 90%;
+        margin-bottom: 15px;
+      }
+  
+      &-button {
+        width: 90%; // ボタンの幅を親要素の幅に合わせて調整
+        height: 45px;
+        margin: 10px auto; // 中央揃え
+      }
+    }
+  }

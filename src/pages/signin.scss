@@ -46,3 +46,44 @@ $border-radius: 5px;
 .error-message {
   color: $error-color;
 }
+
+@media (max-width: 768px) {
+    .signin {
+      width: 90%;
+  
+      input {
+        &.email-input,
+        &.password-input {
+          font-size: medium;
+        }
+      }
+  
+      &-button {
+        width: 100%;
+      }
+    }
+  }
+  
+  // 320px用のメディアクエリ
+  @media (max-width: 320px) {
+    .signin {
+      width: 100%;
+  
+      input {
+        &.email-input,
+        &.password-input {
+          font-size: small;
+          height: $input-height - 5px; // 少し高さを減らす
+        }
+      }
+  
+      &-button {
+        width: 100%;
+        height: $button-height - 5px; // ボタンの高さを少し減らす
+      }
+    }
+  
+    .error-message {
+      font-size: 12px; // エラーメッセージのフォントサイズを小さくする
+    }
+  }

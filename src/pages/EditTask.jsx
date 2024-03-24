@@ -5,8 +5,8 @@ import { useCookies } from "react-cookie";
 import { url } from "../const";
 import { useNavigate, useParams } from "react-router-dom";
 import "./editTask.scss";
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export const EditTask = () => {
   const navigation = useNavigate();
@@ -26,7 +26,7 @@ export const EditTask = () => {
       title: title,
       detail: detail,
       done: isDone,
-      limit: date
+      limit: date,
     };
 
     axios
@@ -73,23 +73,21 @@ export const EditTask = () => {
         setIsDone(task.done);
         setDate(task.limit);
 
-        console.log(task.limit)
+        console.log(task.limit);
       })
       .catch((err) => {
         setErrorMessage(`タスク情報の取得に失敗しました。${err}`);
       });
   }, []);
-  const handleDate =(selectedDate) => {
+  const handleDate = (selectedDate) => {
     if (!(selectedDate instanceof Date)) {
-        console.error('selectedDate is not a Date object:', selectedDate);
-        return;
-      }
+      console.error("selectedDate is not a Date object:", selectedDate);
+      return;
+    }
     const now = new Date();
-    if(selectedDate<now)
-    alert("選択された日付は現在時刻より前です。")
-    else
-        setDate(selectedDate);
-  }
+    if (selectedDate < now) alert("選択された日付は現在時刻より前です。");
+    else setDate(selectedDate);
+  };
   return (
     <div>
       <Header />
@@ -118,14 +116,15 @@ export const EditTask = () => {
           <label>期日</label>
           <br />
           <DatePicker
-        selected={new Date(date)}
-        onChange={handleDate}
-        showTimeSelect
-        timeFormat="HH:mm"
-        timeIntervals={10}
-        timeCaption="time"
-        dateFormat="yyyy-MM-dd'T'HH:mm:ss'Z'"
-      />
+            selected={new Date(date)}
+            onChange={handleDate}
+            showTimeSelect
+            timeFormat="HH:mm"
+            timeIntervals={10}
+            timeCaption="time"
+            dateFormat="yyyy-MM-ddHH:mm:ss"
+            className="edit-task-date"
+          />
           <br />
           <div>
             <input

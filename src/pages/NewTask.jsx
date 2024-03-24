@@ -5,8 +5,8 @@ import { url } from "../const";
 import { Header } from "../components/Header";
 import "./newTask.scss";
 import { useNavigate } from "react-router-dom";
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 export const NewTask = () => {
   const [selectListId, setSelectListId] = useState();
   const [lists, setLists] = useState([]);
@@ -57,13 +57,11 @@ export const NewTask = () => {
       });
   }, []);
 
-  const handleDate =(selectedDate) => {
+  const handleDate = (selectedDate) => {
     const now = new Date();
-    if(selectedDate<now)
-    alert("選択された日付は現在時刻より前です。")
-    else
-        setDate(selectedDate);
-  }
+    if (selectedDate < now) alert("選択された日付は現在時刻より前です。");
+    else setDate(selectedDate);
+  };
   return (
     <div>
       <Header />
@@ -95,20 +93,15 @@ export const NewTask = () => {
           <label>期日</label>
           <br />
           <DatePicker
-        selected={date}
-        onChange={handleDate}
-        showTimeSelect
-        timeFormat="HH:mm"
-        timeIntervals={10}
-        timeCaption="time"
-        dateFormat="yyyy-MM-dd'T'HH:mm:ss'Z'"
-        className="new-task-date"
-      />
-          {/* <input 
-            type="datetime-local"
-            onChange={(e) => setDate(e.target.value)}
+            selected={date}
+            onChange={handleDate}
+            showTimeSelect
+            timeFormat="HH:mm"
+            timeIntervals={10}
+            timeCaption="time"
+            dateFormat="yyyy-MM-dd HH:mm:ss"
             className="new-task-date"
-          /> */}
+          />
           {console.log(date)}
           <br />
 
