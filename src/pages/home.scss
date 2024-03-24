@@ -1,13 +1,13 @@
 @charset "utf-8";
 
-// 変数定義
+
 $primary-color: #242f9b;
 $background-color: #f5f5f5;
 $white-color: #ffffff;
 $error-color: #ff3333;
 $black-color: #000000;
 
-// 既存のスタイル
+
 .taskList {
   margin: 50px auto;
   list-style: none;
@@ -89,7 +89,7 @@ $black-color: #000000;
   }
 }
 
-// メディアクエリでスマートフォン用のスタイルを追加
+
 @media (max-width: 768px) {
   .taskList {
     width: 100%;
@@ -100,32 +100,32 @@ $black-color: #000000;
     }
 
     .task-item {
-      height: auto; // 高さを自動調整に変更
+      height: auto; 
       padding: 15px;
     }
   }
 
   .list-header {
-    flex-direction: column; // 要素を縦方向に並べる
+    flex-direction: column; 
   }
 
   .list-menu {
     text-align: center;
-    margin-top: 10px; // ヘッダーとの間にマージンを追加
+    margin-top: 10px; 
   }
 
   .list-tab {
-    flex-direction: column; // タブを縦方向に並べる
+    flex-direction: column; 
 
     .list-tab-item {
-      width: auto; // 幅を自動調整に変更
+      width: auto; 
       padding: 10px;
-      margin-bottom: 5px; // アイテム間のマージンを追加
+      margin-bottom: 5px; 
     }
   }
 
   .display-select-wrapper {
-    width: auto; // 幅を自動調整に変更
+    width: auto; 
     margin: 10px auto;
   }
 }
@@ -140,34 +140,34 @@ $black-color: #000000;
       }
   
       .task-item {
-        height: auto; // 高さを自動調整に変更
+        height: auto; 
         padding: 10px;
         font-size: medium;
       }
     }
   
     .list-header {
-      flex-direction: column; // 要素を縦方向に並べる
+      flex-direction: column; 
     }
   
     .list-menu {
       text-align: center;
-      margin-top: 10px; // ヘッダーとの間にマージンを追加
+      margin-top: 10px; 
     }
   
     .list-tab {
-      flex-direction: column; // タブを縦方向に並べる
-      padding: 0; // 余白を削除
+      flex-direction: column; 
+      padding: 0; 
   
       .list-tab-item {
-        width: auto; // 幅を自動調整に変更
+        width: auto; 
         padding: 10px;
-        margin-bottom: 5px; // アイテム間のマージンを追加
+        margin-bottom: 5px; 
       }
     }
   
     .display-select-wrapper {
-      width: auto; // 幅を自動調整に変更
+      width: auto; 
       margin: 10px auto;
     }
   }

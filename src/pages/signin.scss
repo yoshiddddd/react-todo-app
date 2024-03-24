@@ -64,7 +64,7 @@ $border-radius: 5px;
     }
   }
   
-  // 320px用のメディアクエリ
+  
   @media (max-width: 320px) {
     .signin {
       width: 100%;
@@ -73,17 +73,17 @@ $border-radius: 5px;
         &.email-input,
         &.password-input {
           font-size: small;
-          height: $input-height - 5px; // 少し高さを減らす
+          height: $input-height - 5px; 
         }
       }
   
       &-button {
         width: 100%;
-        height: $button-height - 5px; // ボタンの高さを少し減らす
+        height: $button-height - 5px; 
       }
     }
   
     .error-message {
-      font-size: 12px; // エラーメッセージのフォントサイズを小さくする
+      font-size: 12px; 
     }
   }

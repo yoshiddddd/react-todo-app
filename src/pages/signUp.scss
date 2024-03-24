@@ -45,35 +45,35 @@ $error-color: #ff3333;
   
       &-form {
         input {
-          font-size: medium; // 画面が小さいときのフォントサイズを調整
+          font-size: medium; 
         }
       }
   
       &-button {
-        width: 100%; // ボタンの幅を画面幅に合わせて調整
+        width: 100%; 
       }
     }
   }
   
-  // 320px用のメディアクエリ
+  
   @media (max-width: 320px) {
     .signup {
-      width: 100%; // 画面が非常に小さい場合は全幅を使用
+      width: 100%; 
   
       &-form {
         input {
-          font-size: small; // さらに小さいフォントサイズ
-          height: $input-height - 5px; // 高さを少し減らす
+          font-size: small; 
+          height: $input-height - 5px; 
         }
       }
   
       &-button {
-        width: 100%; // ボタンの幅を画面幅に合わせて調整
-        height: $button-height - 5px; // ボタンの高さを少し減らす
+        width: 100%; 
+        height: $button-height - 5px; 
       }
     }
   
     .error-message {
-      font-size: 12px; // エラーメッセージのフォントサイズを小さくする
+      font-size: 12px; 
     }
   }

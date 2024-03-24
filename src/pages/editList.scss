@@ -14,16 +14,10 @@
     }
   
     &-button {
-      width: 80px;
+      width: 100px;
       height: 40px;
       border-radius: 5px;
-  
-      &.delete-list-button {
-        color: #ff3333;
-        border: solid 1px #ff3333;
-        margin: 25px 5px;
-      }
-  
+      margin :10px;
       &.edit-list-button {
         background-color: #242f9b;
         color: #ffffff;
@@ -31,53 +25,70 @@
     }
   }
   
+  .delete-list-button{
+    width: 50px;
+    padding:10px;
+    border-radius: 5px;
+    background-color: #ff3333;
+}
   .error-message {
     color: #ff3333;
   }
   
   @media (max-width: 768px) {
     .edit-list {
-      width: 100%; // 画面の幅に応じて調整
+      width: 100%; 
   
       &-title {
-        width: 80%; // 親要素の幅に応じて調整
+        width: 80%; 
       }
   
       &-button {
-        width: 100px; // ボタンの幅を拡大
-        height: 50px; // ボタンの高さを拡大
+        height: 50px; 
   
-        &.delete-list-button,
         &.edit-list-button {
-          width: 200px; // コンテンツの幅に合わせて自動調整
-          margin: 20px 10px; // マージン調整
+          width: 200px; 
+          margin: 20px 10px; 
         }
       }
+    }
+    .delete-list-button{
+        height: 50px;
+        width: 70px;
+        padding:10px;
+        border-radius: 5px;
+        background-color: #ff3333;
     }
   }
 
   @media (max-width: 320px) {
     .edit-list {
-      width: 100%; // 画面幅いっぱいに広がる
+      width: 100%; 
   
       &-title {
-        width: 95%; // 親要素の幅に合わせて調整
-        margin-bottom: 15px; // 下マージンを減少
+        width: 95%; 
+        margin-bottom: 15px; 
       }
   
       &-button {
-        width: 90%; // ボタンの幅をさらに拡大
-        height: 45px; // 高さを少し調整
+        width: 90%; 
+        height: 45px; 
   
         &.delete-list-button,
         &.edit-list-button {
-          width: 100%; // 親要素の幅いっぱいに広がる
-          margin: 15px 0; // マージン調整
+          width: 80px; 
+          margin: 15px; 
         }
       }
     }
-  
+    .delete-list-button{
+        height: 45px;
+        width: 70px;
+        padding:10px;
+        border-radius: 5px;
+        background-color: #ff3333;
+    }
     .error-message {
-      font-size: 12px; // エラーメッセージのフォントサイズを小さくする
+      font-size: 12px; 
     }
   }

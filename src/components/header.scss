@@ -13,3 +13,24 @@
   color: #ffffff;
   margin: auto 25px auto auto;
 }
+
+@media (max-width: 768px) {
+    .header {
+      height: 60px; 
+    }
+  
+    .sign-out-button {
+      margin: auto 15px auto auto; 
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .header {
+        width: 102%;
+      height: 60px; 
+    }
+  
+    .sign-out-button {
+      margin: auto 10px auto auto; 
+    }
+  }

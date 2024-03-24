@@ -50,17 +50,17 @@ $button-radius: 5px;
 
 @media (max-width: 768px) {
     .edit-task {
-      width: 90%; // 画面幅に合わせて調整
+      width: 90%; 
   
       &-title,
       &-detail {
-        width: 100%; // 親要素の幅に合わせて調整
-        margin-bottom: 20px; // マージンを少し調整
+        width: 100%; 
+        margin-bottom: 20px; 
       }
   
       &-button{
-        width: 100px; // ボタンの幅を拡大
-        height: 50px; // ボタンの高さを拡大
+        width: 100px; 
+        height: 50px; 
         margin: 15px 5%;
       }
     }
@@ -69,28 +69,28 @@ $button-radius: 5px;
         height: 50px;
         border-radius: $button-radius;
         background-color: #ff3333;
-        // margin: 20px auto; // 中央に配置
+        
     }
     .error-message {
-      font-size: 14px; // フォントサイズを調整
+      font-size: 14px; 
     }
   }
   
-  // 320px用のメディアクエリ
+  
   @media (max-width: 320px) {
     .edit-task {
-      width: 100%; // 画面幅いっぱいに広がる
+      width: 100%; 
   
       &-title,
       &-detail {
-        width: 100%; // 親要素の幅に合わせて調整
-        margin-bottom: 15px; // マージンをさらに減少
+        width: 100%; 
+        margin-bottom: 15px; 
       }
   
       &-button{
-        width: 90px; // 親要素の幅のほとんどを使用
-        height: 45px; // 高さを少し調整
-        margin: 15px 5%; // より大きなマージン
+        width: 90px; 
+        height: 45px; 
+        margin: 15px 5%; 
       }
     }
     .delete-task-button{
@@ -98,9 +98,9 @@ $button-radius: 5px;
         height: 45px;
         border-radius: $button-radius;
         background-color: #ff3333;
-        // margin: 20px auto; // 中央に配置
+        
     }
     .error-message {
-      font-size: 12px; // フォントサイズをさらに小さく
+      font-size: 12px; 
     }
   }
